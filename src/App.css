@@ -1,0 +1,89 @@
+:root {
+  --primary-color: #ffffff; /* White */
+  --secondary-color: #0000ff; /* Blue */
+  --text-color: #000000; /* Black */
+  --highlight-color: #ff0000; /* Red */
+  --font-family: 'Arial', sans-serif;
+}
+
+header {
+  background-color: var(--secondary-color);
+  padding: 10px;
+  color: var(--primary-color);
+}
+
+header input[type="text"] {
+  margin: 0 10px;
+}
+
+header nav a {
+  color: var(--primary-color);
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+.Categories, .NewsFeed {
+  padding: 10px;
+}
+
+.Categories {
+  float: left;
+  width: 20%;
+  background-color: #f0f0f0;
+}
+
+.Categories li:hover {
+  font-weight: bold;
+}
+
+.NewsFeed {
+  float: right;
+  width: 75%;
+}
+
+.NewsFeed div {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.NewsFeed div:hover {
+  background-color: #f0f0f0;
+}
+
+.NewsFeed h4 a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.NewsFeed h4 a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background-color: var(--secondary-color);
+  padding: 10px;
+  color: var(--primary-color);
+  text-align: center;
+}
+
+footer a {
+  color: var(--primary-color);
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .Categories, .NewsFeed {
+    float: none;
+    width: 100%;
+  }
+}
